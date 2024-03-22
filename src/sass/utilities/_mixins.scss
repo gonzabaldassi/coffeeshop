@@ -1,19 +1,19 @@
 @use 'vars' as v;
 
 @mixin tel{
-    @media (min-width:v.$tel){
+    @media (min-width: v.$tel){
         @content;
     }
 }
 
 @mixin tablet{
-    @media (min-width:v.$tablet){
+    @media (min-width: v.$tablet){
         @content;
     }
 }
 
 @mixin desktop{
-    @media (min-width:v.$desktop) {
+    @media (min-width: v.$desktop) {
         @content;
     }
 }
