@@ -363,3 +363,7 @@ img {
 .center {
   text-align: center;
 }
+
+.bg-primary {
+  background-color: #E8505B;
+}

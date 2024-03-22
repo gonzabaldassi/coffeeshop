@@ -1,8 +1,13 @@
+//CSS & SASS DEPENDENCIES
 const {src, dest, watch, series} = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 
+//Images Dependencies
+const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
+const avif = require('gulp-avif');
 
 function css(done){
     //Pasos para compilar sass
@@ -27,12 +32,50 @@ function css(done){
     done();
 }
 
+function img(done){
+    src("./src/img/**/*")
+        .pipe(
+            imagemin({optimizationLevel:3})
+        )
+        .pipe(
+            dest("./build/img")
+        )
+
+    done();
+}
+
+function webpVersion(done){
+    src('./src/img/**/*.{jpg,png}')
+        .pipe(
+            webp()
+        )
+        .pipe(
+            dest('./build/img')
+        )
+    done();
+}
+
+function avifVersion(done){
+    src('./src/img/**/*.{jpg,png}')
+        .pipe(
+            avif()
+        )
+        .pipe(
+            dest('./build/img')
+        )
+    done();
+}
+
 function dev(){
     watch('./src/sass/**/*.scss', css);
+    watch('./src/img/**/*', img);
 }
 
 
 exports.css = css;
 exports.dev = dev;
+exports.img=img;
+exports.webpVersion=webpVersion;
+exports.avifVersion=avifVersion;
 
-exports.default = series(css, dev );
+exports.default = series(img,webpVersion,avifVersion, css, dev );
