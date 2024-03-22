@@ -354,6 +354,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -366,4 +370,70 @@ img {
 
 .bg-primary {
   background-color: #E8505B;
+}
+
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 70rem;
+  padding: 5rem;
+  position: relative;
+}
+.header--inicio {
+  background-image: url(../img/header_inicio.jpg);
+}
+.header::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.5;
+}
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.header__logo {
+  width: 20rem;
+  margin: 0;
+}
+.header__bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__text {
+  text-align: center;
+  color: #FFF;
+  margin-top: 5rem;
+  text-transform: uppercase;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+  padding-left: 0;
+}
+.navbar__link {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.navbar__link:hover {
+  color: #c39c63;
+}
+.navbar__link--active {
+  color: #c39c63;
 }

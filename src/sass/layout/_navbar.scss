@@ -1,0 +1,24 @@
+@use '../utilities/vars' as v;
+.navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: center;
+    padding-left: 0;
+
+    &__link{
+        color: v.$white;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        
+        &:hover{
+            color:v.$lightBrown ;
+        }
+
+        &--active{
+            color: v.$lightBrown;
+        }
+    }
+}

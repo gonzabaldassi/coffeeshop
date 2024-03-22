@@ -10,26 +10,27 @@
     <title>Cafetería - SASS</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header header--inicio">
         <div class="header__container container">
             <div class="header__bar">
                 <div class="header__logo">
+                    <img src="./build/img/logo.svg" alt="Coffeeshop's logo">
                 </div>
 
                 <nav>
                     <ul class="navbar">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./pages/about.html">About Us</a></li>
-                        <li><a href="./pages/process.html">Process</a></li>
-                        <li><a href="./pages/menu.html">Menu</a></li>
-                        <li><a href="./pages/gallery.html">Gallery</a></li>
-                        <li><a href="./pages/contact.html">Contact</a></li>
+                        <li class="navbar__list"><a class="navbar__link navbar__link--active" href="./index.html">Home</a></li>
+                        <li class="navbar__list"><a class="navbar__link" href="./pages/about.html">About Us</a></li>
+                        <li class="navbar__list"><a class="navbar__link" href="./pages/process.html">Process</a></li>
+                        <li class="navbar__list"><a class="navbar__link" href="./pages/menu.html">Menu</a></li>
+                        <li class="navbar__list"><a class="navbar__link" href="./pages/gallery.html">Gallery</a></li>
+                        <li class="navbar__list"><a class="navbar__link" href="./pages/contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
 
-            <div class="header__text">
-                <h1>Live a unique experience at our café</h1>
+            <div>
+                <h1 class="header__text">Live a unique experience at our café</h1>
             </div>
         </div>
         

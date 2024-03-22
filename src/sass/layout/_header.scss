@@ -1,0 +1,52 @@
+@use '../utilities/vars' as v;
+.header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 70rem;
+    padding: 5rem;
+    position: relative;
+    
+    &--inicio{
+        background-image: url(../img/header_inicio.jpg);
+    }
+
+    &::before{
+        content: '';
+        background-color: v.$black;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: .5;
+        
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &__logo{
+        width: 20rem;
+        margin: 0;
+    }
+
+    &__bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text{
+        text-align: center;
+        color: v.$white;
+        margin-top: 5rem;
+        text-transform: uppercase;
+    }
+}
