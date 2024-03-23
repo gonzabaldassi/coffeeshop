@@ -1,4 +1,4 @@
-# coffeeshop
+<h1 style="center">coffeeshop</h1>
 Este proyecto es una página web diseñada para una cafetería ficticia, creado como parte de un curso en Udemy. Tiene como objetivo practicar el uso de HTML y SASS, implementando Gulp como herramienta de automatización. La página web incluye diversas secciones que presentan el menú de la cafetería, información sobre el establecimiento y otras funciones.
 
 ## Tecnologías Utilizadas:
