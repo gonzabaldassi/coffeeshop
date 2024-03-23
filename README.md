@@ -11,7 +11,7 @@ Este proyecto es una página web diseñada para una cafetería ficticia, creado 
  * Diseño responsive que garantiza una experiencia óptima tanto en dispositivos móviles como en computadoras de escritorio.
  * Integración de formularios para facilitar la realización de pedidos en línea.
 
-##Consideraciones:
+## Consideraciones:
 * Se utiliza el enfoque de mobile first.
 * Se utilizaron mixins para definir los distintos media queries y son llamados desde los partials correspondientes. (NO se utiliza un solo partial donde centralizamos todos los media queries)
 
