@@ -1,4 +1,4 @@
-# coffeeshop
+<h1 align="center">coffeeshop</h1>
 Este proyecto es una página web diseñada para una cafetería ficticia, creado como parte de un curso en Udemy. Tiene como objetivo practicar el uso de HTML y SASS, implementando Gulp como herramienta de automatización. La página web incluye diversas secciones que presentan el menú de la cafetería, información sobre el establecimiento y otras funciones.
 
 ## Tecnologías Utilizadas:
@@ -10,5 +10,9 @@ Este proyecto es una página web diseñada para una cafetería ficticia, creado 
  * Menú interactivo y visualmente atractivo que presenta los productos ofrecidos por la cafetería.
  * Diseño responsive que garantiza una experiencia óptima tanto en dispositivos móviles como en computadoras de escritorio.
  * Integración de formularios para facilitar la realización de pedidos en línea.
+
+## Consideraciones:
+* Se utiliza el enfoque de mobile first.
+* Se utilizaron mixins para definir los distintos media queries y son llamados desde los partials correspondientes. (NO se utiliza un solo partial donde centralizamos todos los media queries)
 
 *Este proyecto es parte de un ejercicio de práctica de un curso de Udemy para mejorar las habilidades en el desarrollo web front-end, enfocándose en la creación de interfaces atractivas y funcionales para el usuario final.*
