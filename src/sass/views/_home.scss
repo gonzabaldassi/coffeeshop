@@ -1,0 +1,13 @@
+@use '../utilities/vars' as v;
+@use '../utilities/mixins' as m;
+
+.main{
+    background-color: v.$white;
+    padding: 2rem;
+
+    @include m.tablet {
+        padding: 10rem;
+        margin-top: -10rem;
+        position: relative
+    }
+}

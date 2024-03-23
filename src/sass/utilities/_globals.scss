@@ -13,11 +13,13 @@ html{
 body{
     font-family: v.$font;
     font-size: 1.6rem;
+    background-color: v.$lightBrown;
 }
 
 p{
     color: v.$black;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 2;
 }
 
 h1, h2, h3{

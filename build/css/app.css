@@ -321,11 +321,13 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  background-color: #ebe7de;
 }
 
 p {
   color: #000;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 h1, h2, h3 {
@@ -474,5 +476,17 @@ img {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 0;
+  }
+}
+
+.main {
+  background-color: #FFF;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .main {
+    padding: 10rem;
+    margin-top: -10rem;
+    position: relative;
   }
 }
