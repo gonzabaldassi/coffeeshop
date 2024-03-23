@@ -11,3 +11,125 @@
         position: relative
     }
 }
+
+.about{
+    &__title{
+        font-size: 3.6rem;
+        color: v.$primaryColor;
+        text-transform: uppercase;
+
+        &::after{
+            content: '';
+            background-image: url(../img/cafe.svg);
+            background-size: 10rem;
+            height: 10rem;
+            width: 10rem;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &--mod{
+            display: block;
+            font-size: 1.8rem;
+            color: v.$secondaryColor;
+        }
+    }
+}
+
+.icons{
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+
+        @include m.tablet {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+    &__img{
+        width: 12rem;
+        height: auto;
+    }
+
+    &__txt{
+        font-size: 3rem;
+        font-weight: 400;
+        color: v.$primaryColor;
+    }
+}
+
+.experience{
+    &__title{
+        font-size: 3.6rem;
+        color: v.$primaryColor;
+        text-transform: uppercase;
+
+        &--mod{
+            display: block;
+            font-size: 1.8rem;
+            color: v.$secondaryColor;
+        }
+    }
+
+    &__gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.6rem;
+
+        @include m.tablet {
+            grid-template-columns: repeat(4, 1fr);
+            &__item:nth-child(1){
+                grid-row: 1/3;
+            }
+
+            &__item:nth-child(2){
+                grid-column: 2/4;
+                grid-row: 1/2;
+            }
+            &__item:nth-child(4){
+                grid-column: 2/3;
+                grid-row: 2/4;
+            }
+            &__item:nth-child(5){
+                grid-column: 3/5;
+                grid-row: 2/3;
+            }
+
+            &__item:nth-child(6){
+                grid-column: 3/5;
+                grid-row: 3/4;
+            }
+            &__item:nth-child(7){
+                grid-column: 1/2;
+                grid-row: 3/5;
+            }
+            &__item:nth-child(8){
+                grid-column: 2/5;
+                grid-row: 4/5;
+            }
+            &__item:nth-child(9){
+                grid-column: 1/3;
+                grid-row: 5/6;
+            }
+            &__item:nth-child(10){
+                grid-column: 3/5;
+                grid-row: 5/6;
+            }
+
+        }
+
+        &__image{
+            object-fit: cover;
+            height: 30rem;
+            width: 30rem;
+
+            @include m.tablet {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
