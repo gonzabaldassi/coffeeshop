@@ -1,16 +1,39 @@
 @use '../utilities/vars' as v;
+@use '../utilities/mixins' as m;
+
 .header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 70rem;
     padding: 5rem;
     position: relative;
+
+    @include m.tablet {
+        min-height: 70rem;
+    }
     
-    &--inicio{
+    //Backgrounds for the different pages
+    &--home{
         background-image: url(../img/header_inicio.jpg);
     }
 
+    &--gallery{
+        background-image: url(../img/header_galeria.jpg);
+    }
+
+    &--about{
+        background-image: url(../img/header_nosotros.jpg);
+    }
+
+    &--menu{
+        background-image: url(../img/header_menu.jpg);
+    }
+
+    &--process{
+        background-image: url(../img/header__proceso.jpg);
+    }
+
+    //Darkness thath has the hero
     &::before{
         content: '';
         background-color: v.$black;
@@ -20,33 +43,47 @@
         right: 0;
         left: 0;
         opacity: .5;
-        
     }
 
+    //This is used to align the div containing the menu and navbar, and the div containing the main text.
     &__container{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
         position: relative;
     }
 
     &__logo{
-        width: 20rem;
+        width: 50%;
         margin: 0;
+
+        @include m.tablet {
+            width: 20rem;
+        }
     }
 
+    //This is used to align the logo and the navbar
     &__bar{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
+        //media query
+        @include m.tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
-    &__text{
+    &__slogan{
         text-align: center;
         color: v.$white;
         margin-top: 5rem;
         text-transform: uppercase;
+
+        @include m.tablet {
+            margin-top: 10rem;
+        }
     }
 }

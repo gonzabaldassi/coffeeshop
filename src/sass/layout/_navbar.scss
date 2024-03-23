@@ -1,11 +1,14 @@
 @use '../utilities/vars' as v;
+@use '../utilities/mixins' as m;
+
 .navbar{
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
     align-items: center;
     padding-left: 0;
-
+    margin-top: v.$distance;
+    
     &__link{
         color: v.$white;
         text-transform: uppercase;
@@ -14,11 +17,19 @@
         text-align: center;
         
         &:hover{
-            color:v.$lightBrown ;
+            color:v.$secondaryColor ;
         }
 
         &--active{
-            color: v.$lightBrown;
+            color: v.$secondaryColor;
         }
     }
+
+    //media query
+    @include m.tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+
 }
