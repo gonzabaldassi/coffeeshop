@@ -645,7 +645,7 @@ img {
 .menu__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.6rem;
+  gap: 2.4rem;
 }
 @media (min-width: 768px) {
   .menu__grid {
@@ -659,4 +659,20 @@ img {
 .menu__item__list {
   display: flex;
   justify-content: space-between;
+}
+.menu__item__text {
+  color: #FFF;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin: 0 0 2rem;
+  text-align: left;
+}
+.menu__item__text--mod {
+  display: block;
+  color: #c39c63;
+}
+.menu__item__price {
+  color: #FFF;
+  font-size: 3rem;
+  font-weight: 900;
 }

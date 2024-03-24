@@ -184,7 +184,7 @@
     &__grid{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1.6rem;
+        gap: 2.4rem;
 
         @include m.tablet {
             grid-template-columns: repeat(2, 1fr);
@@ -201,6 +201,25 @@
         &__list{
             display: flex;
             justify-content: space-between;
+        }
+
+        &__text{
+            color: v.$white;
+            font-size: 2.2rem;
+            line-height: 1.5;
+            margin: 0 0 2rem;
+            text-align: left;
+
+            &--mod{
+                display: block;
+                color: v.$secondaryColor;
+            }
+        }
+
+        &__price{
+            color: v.$white;
+            font-size: 3rem;
+            font-weight: 900;
         }
     }
 }
