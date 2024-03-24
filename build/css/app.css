@@ -643,7 +643,14 @@ img {
   font-family: "Bona Nova", serif;
 }
 .menu__grid {
+  display: grid;
   grid-template-columns: 1fr;
+  gap: 1.6rem;
+}
+@media (min-width: 768px) {
+  .menu__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .menu__item__title {
   text-transform: uppercase;
