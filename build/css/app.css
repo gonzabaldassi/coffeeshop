@@ -358,6 +358,8 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -509,13 +511,13 @@ img {
   display: block;
   font-size: 1.8rem;
   color: #c39c63;
+  font-family: "Bona Nova", serif;
 }
 
 .icons__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 0;
 }
 @media (min-width: 768px) {
   .icons__list {
@@ -531,6 +533,7 @@ img {
   font-size: 3rem;
   font-weight: 400;
   color: #5E311E;
+  font-family: "Bona Nova", serif;
 }
 
 .experience__title {
@@ -542,6 +545,7 @@ img {
   display: block;
   font-size: 1.8rem;
   color: #c39c63;
+  font-family: "Bona Nova", serif;
 }
 .experience__gallery {
   display: grid;
@@ -607,4 +611,45 @@ img {
     width: 100%;
     height: 100%;
   }
+}
+
+.menu {
+  background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, #5e311e, #5e311e);
+  background-repeat: no-repeat;
+  background-position: center 5rem, center 95%, 100%;
+  background-size: 150%, 150%, 100%;
+  padding: 15rem 5rem 20rem 5rem;
+}
+@media (min-width: 768px) {
+  .menu {
+    padding: 15rem 0 20rem 0;
+    background-size: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .menu {
+    background-size: 50%, 50%, 100%;
+  }
+}
+.menu__title {
+  font-size: 3.6rem;
+  color: #FFF;
+  text-transform: uppercase;
+}
+.menu__title--mod {
+  display: block;
+  font-size: 1.8rem;
+  color: #c39c63;
+  font-family: "Bona Nova", serif;
+}
+.menu__grid {
+  grid-template-columns: 1fr;
+}
+.menu__item__title {
+  text-transform: uppercase;
+  color: #FFF;
+}
+.menu__item__list {
+  display: flex;
+  justify-content: space-between;
 }
