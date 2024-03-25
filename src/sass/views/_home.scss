@@ -68,6 +68,16 @@
         color: v.$primaryColor;
         text-transform: uppercase;
 
+        &::after{
+            content: '';
+            background-image: url(../img/cafe.svg);
+            background-size: 10rem;
+            height: 10rem;
+            width: 10rem;
+            display: block;
+            margin: 0 auto;
+        }
+
         &--mod{
             display: block;
             font-size: 1.8rem;
@@ -225,5 +235,91 @@
             font-size: 3rem;
             font-weight: 900;
         }
+    }
+}
+
+.testimonial{
+    background-color: v.$white;
+    padding: 10rem 2rem;
+    margin-top: -10rem;
+
+    &__title{
+        font-size: 3.6rem;
+        color: v.$primaryColor;
+        text-transform: uppercase;
+
+        &::after{
+            content: '';
+            background-image: url(../img/cafe.svg);
+            background-size: 10rem;
+            height: 10rem;
+            width: 10rem;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &--mod{
+            display: block;
+            font-size: 1.8rem;
+            color: v.$secondaryColor;
+            font-family: v.$cursiveFont;
+        }
+    }
+
+    &__content{
+        background-color: v.$lightBrown;
+        padding: 2rem 4rem;
+        margin: 0 auto;
+        max-width: 50rem;
+
+        &__author{
+            text-align: end;
+            font-size: 2.4rem;
+            color: v.$primaryColor;
+            font-family: v.$cursiveFont;
+        }
+    }
+}
+
+.footer{
+    background-color: v.$primaryColor;
+
+    &__categories{
+        background-color: v.$white;
+        padding: 5rem;
+
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+    }
+
+    &__categorie{
+        margin-bottom: 5rem;
+        font-family: v.$cursiveFont;
+
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+
+        &__title{
+            margin-bottom: 1rem;
+            color:v.$secondaryColor;
+            font-size: 2.4rem;
+            text-transform: uppercase;
+        }
+
+        &__text{
+            font-size: 2rem;
+            margin: 0;
+            color: v.$black;
+        }
+    }
+
+    &__copy{
+        margin: 0;
+        padding: 2rem;
+        color: v.$white;
     }
 }

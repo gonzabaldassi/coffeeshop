@@ -541,6 +541,15 @@ img {
   color: #5E311E;
   text-transform: uppercase;
 }
+.experience__title::after {
+  content: "";
+  background-image: url(../img/cafe.svg);
+  background-size: 10rem;
+  height: 10rem;
+  width: 10rem;
+  display: block;
+  margin: 0 auto;
+}
 .experience__title--mod {
   display: block;
   font-size: 1.8rem;
@@ -673,4 +682,81 @@ img {
   color: #FFF;
   font-size: 3rem;
   font-weight: 900;
+}
+
+.testimonial {
+  background-color: #FFF;
+  padding: 10rem 2rem;
+  margin-top: -10rem;
+}
+.testimonial__title {
+  font-size: 3.6rem;
+  color: #5E311E;
+  text-transform: uppercase;
+}
+.testimonial__title::after {
+  content: "";
+  background-image: url(../img/cafe.svg);
+  background-size: 10rem;
+  height: 10rem;
+  width: 10rem;
+  display: block;
+  margin: 0 auto;
+}
+.testimonial__title--mod {
+  display: block;
+  font-size: 1.8rem;
+  color: #c39c63;
+  font-family: "Bona Nova", serif;
+}
+.testimonial__content {
+  background-color: #ebe7de;
+  padding: 2rem 4rem;
+  margin: 0 auto;
+  max-width: 50rem;
+}
+.testimonial__content__author {
+  text-align: end;
+  font-size: 2.4rem;
+  color: #5E311E;
+  font-family: "Bona Nova", serif;
+}
+
+.footer {
+  background-color: #5E311E;
+}
+.footer__categories {
+  background-color: #FFF;
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .footer__categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.footer__categorie {
+  margin-bottom: 5rem;
+  font-family: "Bona Nova", serif;
+}
+@media (min-width: 768px) {
+  .footer__categorie {
+    margin-bottom: 0;
+  }
+}
+.footer__categorie__title {
+  margin-bottom: 1rem;
+  color: #c39c63;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.footer__categorie__text {
+  font-size: 2rem;
+  margin: 0;
+  color: #000;
+}
+.footer__copy {
+  margin: 0;
+  padding: 2rem;
+  color: #FFF;
 }
