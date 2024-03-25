@@ -43,7 +43,19 @@
         <section class="about">
             <h2 class="about__title"><span class="about__title--mod">Learn more</span> about us</h2>
             <div class="about__grid">
-                <img src="../build/img/nosotros_sidebar.jpg" alt="AboutUs's image" class="about__img">
+                <picture>
+                    <source
+                        srcset="../build/img/nosotros_sidebar.avif" 
+                        type="image/avif">
+                    <source
+                        srcset="../build/img/nosotros_sidebar.webp" 
+                        type="image/webp">
+                    <source
+                        srcset="../build/img/nosotros_sidebar.jpg" 
+                        type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="../build/img/nosotros_sidebar.jpg" alt="AboutUs's image" class="about__img">
+                </picture>
+
                 <div class="about__text">
                     <p>Since 1939, La Cafetería has been a cherished community hub, offering exceptional coffee and warm hospitality. Our dedication to quality ensures each cup is a delight. From our carefully sourced beans to our friendly service, we strive to create a welcoming atmosphere where every visit feels like home. Join us in celebrating tradition and excellence, one sip at a time.</p>
                     <blockquote class="about__blockquote">Excellent Flavor!</blockquote>

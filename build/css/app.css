@@ -779,7 +779,7 @@ img {
 .about__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.4rem;
+  gap: 3.2rem;
 }
 @media (min-width: 768px) {
   .about__grid {

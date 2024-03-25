@@ -25,7 +25,7 @@
             font-family: v.$cursiveFont;
         }
     }
-    
+
     &__img{
         border: 3rem solid #fff;
         box-shadow: 9px 10px 5px -7px rgba(0,0,0,.35);
@@ -46,7 +46,7 @@
     &__grid{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 2.4rem;
+        gap: 3.2rem;
 
         @include m.tablet {
             grid-template-columns: repeat(2, 1fr);
