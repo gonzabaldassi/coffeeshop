@@ -1,0 +1,56 @@
+@use '../utilities/vars' as v;
+@use '../utilities/mixins' as m;
+
+//
+.about{
+    &__title{
+        font-size: 3.6rem;
+        color: v.$primaryColor;
+        text-transform: uppercase;
+
+        &::after{
+            content: '';
+            background-image: url(../img/cafe.svg);
+            background-size: 10rem;
+            height: 10rem;
+            width: 10rem;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &--mod{
+            display: block;
+            font-size: 1.8rem;
+            color: v.$secondaryColor;
+            font-family: v.$cursiveFont;
+        }
+    }
+    
+    &__img{
+        border: 3rem solid #fff;
+        box-shadow: 9px 10px 5px -7px rgba(0,0,0,.35);
+        transform: rotate(-6deg);
+    }
+
+    &__text{
+        text-align: left;
+    }
+
+    &__blockquote{
+        border-left: .5rem solid v.$primaryColor;
+        font-size: 2rem;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    &__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.4rem;
+
+        @include m.tablet {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+    }
+}

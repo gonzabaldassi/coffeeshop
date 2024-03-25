@@ -493,27 +493,7 @@ img {
   }
 }
 
-.about__title {
-  font-size: 3.6rem;
-  color: #5E311E;
-  text-transform: uppercase;
-}
-.about__title::after {
-  content: "";
-  background-image: url(../img/cafe.svg);
-  background-size: 10rem;
-  height: 10rem;
-  width: 10rem;
-  display: block;
-  margin: 0 auto;
-}
-.about__title--mod {
-  display: block;
-  font-size: 1.8rem;
-  color: #c39c63;
-  font-family: "Bona Nova", serif;
-}
-
+/* In the homepage, classes defined in the aboutUs.scss are used. */
 .icons__list {
   display: flex;
   flex-direction: column;
@@ -759,4 +739,51 @@ img {
   margin: 0;
   padding: 2rem;
   color: #FFF;
+}
+
+.about__title {
+  font-size: 3.6rem;
+  color: #5E311E;
+  text-transform: uppercase;
+}
+.about__title::after {
+  content: "";
+  background-image: url(../img/cafe.svg);
+  background-size: 10rem;
+  height: 10rem;
+  width: 10rem;
+  display: block;
+  margin: 0 auto;
+}
+.about__title--mod {
+  display: block;
+  font-size: 1.8rem;
+  color: #c39c63;
+  font-family: "Bona Nova", serif;
+}
+.about__img {
+  border: 3rem solid #fff;
+  box-shadow: 9px 10px 5px -7px rgba(0, 0, 0, 0.35);
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+.about__text {
+  text-align: left;
+}
+.about__blockquote {
+  border-left: 0.5rem solid #5E311E;
+  font-size: 2rem;
+  margin: 0;
+  padding: 1rem;
+}
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+@media (min-width: 768px) {
+  .about__grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 }
