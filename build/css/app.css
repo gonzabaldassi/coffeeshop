@@ -757,10 +757,10 @@ img {
   .process__item {
     grid-template-columns: repeat(2, 1fr);
   }
-  .process__item:nth-child(2) .process__item, .process__item:nth-child(4) .process__item {
+  .process__item:nth-child(even) .process__item {
     grid-column: 2/3;
   }
-  .process__item:nth-child(2) .process__content, .process__item:nth-child(4) .process__content {
+  .process__item:nth-child(even) .process__content {
     grid-row: 1/2;
   }
 }

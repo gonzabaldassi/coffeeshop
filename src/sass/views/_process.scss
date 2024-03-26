@@ -16,7 +16,7 @@
         @include m.tablet {
             grid-template-columns: repeat(2, 1fr);
 
-            &:nth-child(2), &:nth-child(4) {
+            &:nth-child(even) {
                 .process__item{
                     grid-column: 2/3;
                 }
