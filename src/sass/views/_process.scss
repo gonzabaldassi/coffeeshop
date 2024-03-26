@@ -1,2 +1,45 @@
 @use '../utilities/vars' as v;
 @use '../utilities/mixins' as m;
+
+
+.process{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+
+    &__item{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.4rem;
+        align-items: center;
+
+        @include m.tablet {
+            grid-template-columns: repeat(2, 1fr);
+
+            &:nth-child(2), &:nth-child(4) {
+                .process__item{
+                    grid-column: 2/3;
+                }
+    
+                .process__content{
+                    grid-row: 1/2;
+                }
+            }
+        }
+    }
+
+    &__title{
+        text-transform: uppercase;
+        color: v.$primaryColor;
+        margin: 0;
+        text-align: left;
+
+        &::after{
+            content: '';
+            background-color: v.$secondaryColor;
+            width: 50%;
+            height: .7rem;
+            display: block;
+        }
+    }
+}

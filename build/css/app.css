@@ -401,7 +401,7 @@ img {
   background-image: url(../img/header_menu.jpg);
 }
 .header--process {
-  background-image: url(../img/header__proceso.jpg);
+  background-image: url(../img/header_proceso.jpg);
 }
 .header::before {
   content: "";
@@ -740,6 +740,42 @@ img {
   margin: 0;
   padding: 2rem;
   color: #FFF;
+}
+
+.process {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+.process__item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .process__item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process__item:nth-child(2) .process__item, .process__item:nth-child(4) .process__item {
+    grid-column: 2/3;
+  }
+  .process__item:nth-child(2) .process__content, .process__item:nth-child(4) .process__content {
+    grid-row: 1/2;
+  }
+}
+.process__title {
+  text-transform: uppercase;
+  color: #5E311E;
+  margin: 0;
+  text-align: left;
+}
+.process__title::after {
+  content: "";
+  background-color: #c39c63;
+  width: 50%;
+  height: 0.7rem;
+  display: block;
 }
 
 .about__title {
