@@ -19,7 +19,7 @@
         <div class="header__container container">
             <div class="header__bar">
                 <div class="header__logo animate__animated animate__wobble">
-                    <img src="../build/img/logo.svg" alt="Coffeeshop's logo">
+                    <a href="../"><img src="../build/img/logo.svg" alt="Coffeeshop's logo"></a>
                 </div>
 
                 <nav>
@@ -39,6 +39,117 @@
             </div>
         </div>
     </header>
+    
+    <main class="main container center main--pb">
+        <section class="information">
+            <h2 class="information__title"><span class="information__title--mod">We use the </span>finest ingredients</h2>
+
+            <div class="information__grid">
+                <div class="information__grid__img">
+                    <picture>
+                        <source
+                            srcset="../build/img/cafe.avif" 
+                            type="image/avif">
+                        <source
+                            srcset="../build/img/cafe.webp"  
+                            type="image/webp">
+                        <source
+                            srcset="../build/img/cafe.jpeg"
+                            type="image/jpeg">
+                        <img loading="lazy" decoding="async" src="../build/img/cafe.jpg" alt="Step one of process">
+                    </picture>
+                </div>
+                <div class="information__grid__content">
+                    At our café, we pride ourselves on crafting exceptional beverages and treats using only the finest ingredients. From our freshly roasted coffee beans to our decadent pastries, each item on our menu is thoughtfully prepared to deliver a delightful experience with every sip and bite. Welcome to a world of flavor and quality
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="menu center">
+        <h2 class="menu__title"><span class="menu__title--mod">Our delicious</span> Menu</h2>
+        <div class="menu__grid container">
+            <section class="menu__item">
+                <h3 class="menu__item__title">Coffee</h3>
+                <ul>
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">Café Latte <span class="menu__item__text--mod">Espresso with steamed milk</span> </p>
+                        <p class="menu__item__price">$25</p>
+                    </li>
+
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">Café Mocha <span class="menu__item__text--mod">Espresso with whipped cream</span> </p>
+                        <p class="menu__item__price">$30</p>
+                    </li>
+
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">American Coffee <span class="menu__item__text--mod">Black coffee</span> </p>
+                        <p class="menu__item__price">$30</p>
+                    </li>
+
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">Cappuccino <span class="menu__item__text--mod">Espresso with a layer of frothed milk</span> </p>
+                        <p class="menu__item__price">$25</p>
+                    </li>
+
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">Cold Mocha <span class="menu__item__text--mod">Espresso, sweet with mocha and milk.</span> </p>
+                        <p class="menu__item__price">$29</p>
+                    </li>
+
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">Burnt Cold Mocha <span class="menu__item__text--mod">Espresso, ice, with burnt sugar and butter.</span> </p>
+                        <p class="menu__item__price">$35</p>
+                    </li>
+
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">Caramel Latte <span class="menu__item__text--mod">Espresso, milk and caramel.</span> </p>
+                        <p class="menu__item__price">$39</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="menu__item">
+                <h3 class="menu__item__title">Food</h3>
+                <ul>
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">Chicken Baguette <span class="menu__item__text--mod">Delicious Baguette with grilled chicken</span> </p>
+                        <p class="menu__item__price">$45</p>
+                    </li>
+
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">Chicken and Cheese Baguette <span class="menu__item__text--mod">With Manchego</span> </p>
+                        <p class="menu__item__price">$50</p>
+                    </li>
+                    
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">Bacon Baguette<span class="menu__item__text--mod">Baguette with spices, vegetables, and bacon</span> </p>
+                        <p class="menu__item__price">$50</p>
+                    </li>
+                    
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">Ham Baguette<span class="menu__item__text--mod">Delicious Baguette with Ham and Spices</span> </p>
+                        <p class="menu__item__price">$65</p>
+                    </li>
+                    
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">Ham, Cheese, and Bacon Baguette<span class="menu__item__text--mod">The house special</span> </p>
+                        <p class="menu__item__price">$69</p>
+                    </li>
+                    
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">Chicken Sandwich<span class="menu__item__text--mod">Delicious sandwich with Chicken and spices</span> </p>
+                        <p class="menu__item__price">$65</p>
+                    </li>
+                    
+                    <li class="menu__item__list">
+                        <p class="menu__item__text">Ham and Cheese Sandwich<span class="menu__item__text--mod">Yellow Cheese with Ham and Cheese</span> </p>
+                        <p class="menu__item__price">$59</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </section>
 
     <footer class="footer center">
         <div class="container footer__categories">

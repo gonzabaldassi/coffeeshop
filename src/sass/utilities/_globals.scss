@@ -1,4 +1,5 @@
 @use 'vars' as v; 
+@use 'mixins' as m;
 
 /* GLOBALS */
 html{
@@ -59,3 +60,17 @@ img{
     display: block;
 }
 
+.main{
+    background-color: v.$white;
+    padding: 2rem;
+
+    @include m.tablet {
+        padding: 10rem;
+        margin-top: -10rem;
+        position: relative
+    }
+
+    &--pb{
+        padding-bottom: 0;
+    }
+}

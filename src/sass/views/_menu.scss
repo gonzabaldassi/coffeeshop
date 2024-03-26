@@ -1,2 +1,47 @@
 @use '../utilities/vars' as v;
 @use '../utilities/mixins' as m;
+
+.information{
+    &__title{
+        font-size: 3.6rem;
+        color: v.$primaryColor;
+        text-transform: uppercase;
+
+        &::after{
+            content: '';
+            background-image: url(../img/cafe.svg);
+            background-size: 10rem;
+            height: 10rem;
+            width: 10rem;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &--mod{
+            display: block;
+            font-size: 1.8rem;
+            color: v.$secondaryColor;
+            font-family: v.$cursiveFont;
+        }
+    }
+
+    &__grid{
+        display: flex;
+        flex-direction: column-reverse;
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-flow: dense;
+            align-items: center;
+
+            &__img{
+                grid-column: 2/3;
+            }
+        }
+    }
+
+    &__content{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
