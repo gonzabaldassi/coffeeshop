@@ -694,6 +694,7 @@ img {
   padding: 2rem 4rem;
   margin: 0 auto;
   max-width: 50rem;
+  border-radius: 1.5rem;
 }
 .testimonial__content__author {
   text-align: end;
