@@ -403,6 +403,9 @@ img {
 .header--process {
   background-image: url(../img/header_proceso.jpg);
 }
+.header--contact {
+  background-image: url(../img/header_contacto.jpg);
+}
 .header::before {
   content: "";
   background-color: #000;

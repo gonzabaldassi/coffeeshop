@@ -33,6 +33,10 @@
         background-image: url(../img/header_proceso.jpg);
     }
 
+    &--contact{
+        background-image: url(../img/header_contacto.jpg);
+    }
+
     //Darkness thath has the hero
     &::before{
         content: '';
