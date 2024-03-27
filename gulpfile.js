@@ -9,6 +9,9 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 
+const sourcemaps = require('gulp-sourcemaps');
+const cssnano = require('cssnano');
+
 function css(done){
     //Pasos para compilar sass
     //1. indetificar archivo; 2. compilarla; 3. Guardar el .css
@@ -16,13 +19,19 @@ function css(done){
 
     //Identificar el archivo
     src('./src/sass/app.scss')
+        .pipe(
+            sourcemaps.init()
+        )
         //Utilizamos pipe para poder compilar el archivo recién cuando la tarea anterior haya finalizado
         .pipe(
             //compilamos el archivo .scss
             sass()
         )
         .pipe(
-            postcss([ autoprefixer() ])
+            postcss([ autoprefixer(), cssnano()])
+        )
+        .pipe(
+            sourcemaps.write('.')
         )
         .pipe(
             //Almacenamos el archivo compilado en el disco

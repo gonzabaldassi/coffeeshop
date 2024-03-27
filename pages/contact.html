@@ -40,6 +40,47 @@
         </div>
     </header>
 
+    <main class="main container contact center">
+        <h2 class="contact__title"><span class="contact__title--mod">Reserve your</span> Table</h2>        
+        <div class="contact__grid">
+            <form action="" class="form">
+                <div class="form__item">
+                    <label for="name" class="form__item__label">Name:</label>
+                    <input class="form__item__input" type="text" id="name" placeholder="Your name" name="name" required>
+                </div>
+                
+                <div class="form__item">
+                    <label class="form__item__label" for="email">Email:</label>
+                    <input class="form__item__input" type="email" placeholder="your email" name="email" id="email" required>
+                </div>
+    
+                <div class="form__item">
+                    <label class="form__item__label" for="number">Number of persons:</label>
+                    <select name="number" id="number" class="form__item__input">
+                        <option value="" disabled selected>--Select--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="more">+4</option>
+                    </select>
+                </div>
+    
+                <div class="form__item">
+                    <label class="form__item__label" for="hour">Hour:</label>
+                    <input class="form__item__input" type="time" id="hour" name="hour" required>
+                </div>
+    
+                <div class="form__item">
+                    <label class="form__item__label" for="date">Date:</label>
+                    <input class="form__item__input" type="date" id="date" name="date" required>
+                </div>
+
+                <input type="submit" value="Send" class="form__btn">
+            </form>
+        </div>
+    </main>
+
     <footer class="footer center">
         <div class="container footer__categories">
             <section class="footer__categorie">
