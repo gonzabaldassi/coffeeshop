@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../build/css/app.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>CoffeeShop | About Us</title>
 </head>
 <body>
@@ -44,7 +45,7 @@
         <section class="about">
             <h2 class="about__title"><span class="about__title--mod">Learn more</span> about us</h2>
             <div class="about__grid">
-                <picture>
+                <picture data-aos="flip-left">
                     <source
                         srcset="../build/img/nosotros_sidebar.avif" 
                         type="image/avif">
@@ -91,5 +92,9 @@
 
         <p class="footer__copy">All rights reserved &copy; La Cafeteria</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
